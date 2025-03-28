@@ -4,6 +4,6 @@ export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
 export AWS_BUCKET_NAME=$S3_BUCKET_NAME
 
 mlflow server \
-  --backend-store-uri postgresql://$DB_DESTINATION_USER:$DB_DESTINATION_PASSWORD@$DB_DESTINATION_HOST:$DB_DESTINATION_PORT/$DB_DESTINATION_NAME\
-  --default-artifact-root s3://$AWS_BUCKET_NAME \
-  --no-serve-artifacts 
+  --backend-store-uri postgresql://mle_20250228_38ac025714:38bc29e0b297455fab12fd8300716372@rc1b-uh7kdmcx67eomesf.mdb.yandexcloud.net:6432/playground_mle_20250228_38ac025714\
+    --default-artifact-root s3://s3-student-mle-20250228-38ac025714 \
+    --no-serve-artifacts 
